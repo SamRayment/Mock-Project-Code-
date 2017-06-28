@@ -172,15 +172,14 @@ public class Main
             }
             System.out.println(data);
             br.close(); 
-            showContacts();
+            viewContactsInTable();
         }
         catch (Exception ex){
             ex.printStackTrace();
         }
     }
 
-    private static void showContacts(){
-        //table.getItems().clear();
+    private static void viewContactsInTable(){
         for (Contacts c : data){
             table.getItems().add(c);
         }
